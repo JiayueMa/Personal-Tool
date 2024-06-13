@@ -23,8 +23,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class ResumeReviewerUI extends JFrame {
-
+      
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
+    //api key changed into input by hand.
     private JTextArea jobDescTextArea;
     private JPasswordField apiKeyField;
     private JTextField qualifiedFolderField;
@@ -203,7 +204,7 @@ public class ResumeReviewerUI extends JFrame {
 
         add(inputPanel, BorderLayout.CENTER);
 
-        // 添加您的信息和联系方式
+        // version info.
         JLabel infoLabel = new JLabel("v1.0 by Jiayue Ma | oldhorse1984@gmail.com");
         infoLabel.setHorizontalAlignment(SwingConstants.CENTER);
         add(infoLabel, BorderLayout.SOUTH);
